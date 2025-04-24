@@ -8,3 +8,4 @@ import './js/faq.js';
 import './js/reviews.js';
 import './js/work-together.js';
 import './js/footer.js';
+import './js/modal.js';
