@@ -1,0 +1,223 @@
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about-me-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+.about-me-title-decoration {
+    color: var(--accet-green);
+}
+
+.about-me-img {
+    display: flex;
+    border-radius: 16px;
+    width: 320px;
+    height: 374px;
+    margin-bottom: 40px;
+}
+
+.about-bio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.about-topic-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding-bottom: 32px;
+}
+
+.about-bio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    letter-spacing: 0.03em;
+    color: var(--black);
+}
+
+
+.about-education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.about-education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+.about-education-item {
+    position: relative;
+    padding-left: 32px;
+}
+  
+.about-education-item::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    background-color:var(--accet-green);
+    border-radius: 50%;
+}
+
+.about-role {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.about-role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-role-item {
+    position: relative;
+    padding-left: 24px;
+}
+
+.about-role-item::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    background-color:var(--accet-green);
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width:768px) {
+    .about-me {
+        background-image: image-set(
+            url('../img/decor-bg/decor-bg-2@1x.webp') 1x,
+            url('../img/decor-bg/decor-bg-2@2x.webp') 2x
+        );
+        background-repeat: no-repeat; 
+        background-position: left 396px top 918px;
+        background-size: 336px 252px;
+    }
+
+    .container {
+        padding-top: 62px;
+        padding-bottom: 62px; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    .about-me-title {
+        grid-column: 1 / -1;
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+    }
+
+    .about-me-img {
+        grid-row: 2 / span 2;
+        justify-self: center;
+
+        width: 336px;
+        height: 392px;
+        margin-top: 368px;
+        margin-bottom: 60px;
+    }
+
+    .about-bio {
+        grid-column: 2 / 3;
+        width: 336px;
+        height: 680px;
+    }
+
+    .about-topic-title {
+        font-size: 36px;
+        line-height: 1.33;
+        letter-spacing: 0.01em;
+    }
+
+    .about-education {
+        grid-column: 1 / 2;
+        align-self: start;
+        width: 336px;
+        margin-bottom: 0;
+    }
+
+    .about-education-list {
+        gap: 16px;
+    }
+    
+
+    .about-role {
+        grid-column: 2 / 3;
+        align-self: start;
+        width: 336px;
+        margin-bottom: 0;
+    }
+
+    .about-role-list {
+        gap: 16px;
+    }
+
+}
+  
+
+
+@media screen and (min-width:1280px) {
+    .about-me {
+        background-position: left 864px top 774px;
+        background-size: 384px 288px;
+    }
+
+    .container {
+        padding-top: 82px;
+        padding-bottom: 82px; 
+        column-gap: 136px;
+        max-width: 1280px;
+    }
+    
+    .about-me-img {
+        width: 384px;
+        height: 448px;
+        margin-top: 272px;
+        margin-bottom: 80px;
+        margin-left: 208px;
+    }
+    
+    .about-bio {
+        width: 488px;
+        height: 488px;
+    }
+    
+    .about-education {
+        width: 384px;
+        margin-left: 208px;
+    }
+    
+    .about-role {
+        width: 384px;
+    }
+
+}
