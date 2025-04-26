@@ -1,0 +1,173 @@
+.title-span{ 
+    color: #00B068;
+}
+
+.work-together-title {
+font-family: "Impact";
+font-size: 52px;
+letter-spacing: 1.8px;
+line-height: 64px;
+font-weight: 400;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+
+.work-together-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 32px;
+
+}
+
+
+
+
+.work-together-svg{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.work-together-contact-item {
+    font-weight: 300;
+font-size: 16px;
+letter-spacing: 0.03em;
+display: flex;
+align-items: center;
+line-height: 1.;
+}
+
+
+.work-together-contact-item:hover,
+.work-together-contact-item:focus {
+    color: #00B068;
+}
+
+.work-together-contacts-list {
+    margin-bottom: 40px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-together-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; 
+    width: 320px;
+}
+
+.work-together-input {
+    width: 320px;
+    height: 48px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+}
+
+.work-together-textarea {
+    width: 320px;
+    height: 128px;
+    padding: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 320px;
+    height: 48px;
+    background-color: #00B068;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #009156;
+}
+
+.section-divider {
+    border-bottom: 2px solid rgba(0, 176, 104, 0.1);
+    
+}
+
+@media (min-width: 768px) {
+
+    .bck-picture{
+        background-image: url(/src/img/decor-bg/decor-bg-7@1x.webp);
+    }
+    .work-together-title {
+    font-family: "Impact";
+    font-size: 108px;
+    letter-spacing: 1.8px;
+    line-height: 124px;
+    margin-bottom: 60px;
+    }
+
+    .work-together-text {
+        width: 488px;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+    }
+    .work-together-contacts-list {
+        margin-bottom: 60px;
+        gap: 16px;
+        flex-direction: row;
+    }
+    .work-together-input {
+        width: 704px;
+        height: 48px;
+    }
+    .work-together-textarea {
+        width: 704px;
+    }
+    .btn {
+        width: 173px;
+        margin-bottom: 124px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .work-together-title {
+        letter-spacing: 1.4px;
+        line-height: 120px;
+        margin-bottom: 79px;
+        max-width: 507px;
+        max-height: 248px;
+        }
+
+        .work-together-contacts-list {
+            margin-bottom: 60px;
+            gap: 16px;
+            flex-direction: column;
+        }
+        .work-together-text {
+            margin-bottom: 120px;
+        }
+        .inning-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    .last-title {
+        margin-bottom: 0;
+    }
+}
