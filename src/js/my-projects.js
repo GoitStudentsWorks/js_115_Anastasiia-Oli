@@ -118,10 +118,25 @@ const projects = [
     if (currentIndex >= projects.length) {
       loadMoreBtn.style.display = "none";
     }
+
+     const cards = document.querySelectorAll(".my-projects-card");
+  if (cards.length > batchSize) { 
+    const lastNewCard = cards[currentIndex - batchSize]; 
+    if (lastNewCard) {
+      const cardHeight = lastNewCard.getBoundingClientRect().height;
+      window.scrollBy({
+        top: cardHeight,
+        behavior: "smooth",
+      });
+      
+      }
+    }
   }
   
   loadMoreBtn.addEventListener("click", handleLoadMore);
   
+
+
   // Початковий рендер
   handleLoadMore();
   
