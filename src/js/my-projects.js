@@ -9,8 +9,8 @@ const projects = [
     {
       title: "Green harvest webservice",
       technologies: ["React", "JavaScript", "Node JS", "Git"],
-      img1x: "../img/my-projects/projects-4@1x.webp",
-      img2x: "../img/my-projects/projects-4@2x.webp",
+      img1x: "./img/my-projects/projects-4@1x.webp",
+      img2x: "./img/my-projects/projects-4@2x.webp",
       link: "https://github.com/Anastasiia-Oli/fur-seal-team-js",
     },
     {
