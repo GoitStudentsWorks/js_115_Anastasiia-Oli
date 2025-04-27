@@ -1,5 +1,10 @@
-.tech-skills .container {
+.tech-skills {
     padding: 40px 0;
+}
+
+.custom-container {
+    padding: 0;
+    margin: 0;
 }
 
 .tech-skills-marquee-1 {
@@ -80,16 +85,18 @@
     }
 } 
 
-
 @media screen and (min-width:768px) {
-    .tech-skills .container {
+    .tech-skills {
         padding: 62px 0;
     }
 }
 
 @media screen and (min-width:1280px) {
-    .tech-skills .container {
+    .tech-skills {
         padding: 82px 0;
-        margin: 0;
+    }
+
+    .custom-container {
+        min-width: 100%;
     }
 }
