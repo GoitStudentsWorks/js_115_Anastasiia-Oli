@@ -4,6 +4,7 @@ const closeBtn = document.querySelector('.button-close');
 
 function openModal() {
     modalOverlay.classList.add('is-open');
+    document.body.classList.add('no-scroll');
 
     closeBtn.focus();
 
@@ -15,6 +16,7 @@ function closeModal(){
 
     setTimeout(() => {
         modalOverlay.classList.remove('is-open', 'is-closed');
+        document.body.classList.remove('no-scroll');
         document.removeEventListener('keydown', handleEscape);
 
     }, 300);
