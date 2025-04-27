@@ -97,7 +97,7 @@ const projects = [
           <a class="my-projects-link" href="${link}" target="_blank" rel="noopener noreferrer">
             Visit
           <svg class="my-projects-link-icon" width="20" height="20" aria-hidden="true">
-          <use href="../img/sprite.svg#arrow-diagonal"></use>
+          <use href="/img/sprite.svg#arrow-diagonal"></use>
           </svg>
           </a>
           </div>
