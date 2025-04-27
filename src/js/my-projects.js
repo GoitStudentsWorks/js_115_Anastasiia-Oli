@@ -2,8 +2,8 @@ const projects = [
     {
       title: "Wallet webservice",
       technologies: ["React", "JavaScript", "Node JS", "Git"],
-      img1x: "/img/my-projects/projects-5@1x.webp",
-      img2x: "/img/my-projects/projects-5@2x.webp",
+      img1x: "img/my-projects/projects-5@1x.webp",
+      img2x: "img/my-projects/projects-5@2x.webp",
       link: "https://github.com/Anastasiia-Oli/fur-seal-team-js",
     },
     {
