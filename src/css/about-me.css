@@ -1,4 +1,4 @@
-.container {
+.about-me {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -101,17 +101,17 @@
 @media screen and (min-width:768px) {
     .about-me {
         background-image: image-set(
-            url('../img/decor-bg/decor-bg-2@1x.webp') 1x,
-            url('../img/decor-bg/decor-bg-2@2x.webp') 2x
+            url('../img/decor-bg/decor-bg-6@1x.webp') 1x,
+            url('../img/decor-bg/decor-bg-6@2x.webp') 2x
         );
         background-repeat: no-repeat; 
         background-position: left 396px top 918px;
         background-size: 336px 252px;
-    }
-
-    .container {
         padding-top: 62px;
         padding-bottom: 62px; 
+    }
+
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 32px;
@@ -165,17 +165,15 @@
     }
 }
   
-
-
 @media screen and (min-width:1280px) {
     .about-me {
         background-position: left 864px top 774px;
         background-size: 384px 288px;
-    }
-
-    .container {
         padding-top: 82px;
         padding-bottom: 82px; 
+    }
+
+    .grid-container {
         column-gap: 136px;
     }
     
