@@ -1,0 +1,93 @@
+/* .reviews-section {
+    max-width: 360px;
+    padding: 0px 20px;
+
+    
+  } */
+
+.reviews-title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.review {
+    background-color: #e4e5e6;
+    border-radius: 16px;
+    padding: 32px;
+    width: 320px;
+    max-height: 296px;
+    margin-bottom: 24px;
+}
+
+.review-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 20px;
+}
+
+.review-author-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-author-photo {
+  width: 40px;
+  height: 40px;
+}
+
+.review-author {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+/* buttons */
+
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 0;
+}
+
+.nav-button {
+  
+  
+}
+
+.next-button-rev {
+ 
+}
+
+.swiper-container {
+    margin: 20px 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007aff;
+}
+
+.swiper-button-next:disabled,
+.swiper-button-prev:disabled {
+    color: #cccccc; /* Змінюємо колір для неактивних кнопок */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
