@@ -2,8 +2,8 @@ const projects = [
     {
       title: "Wallet webservice",
       technologies: ["React", "JavaScript", "Node JS", "Git"],
-      img1x: "img/my-projects/projects-5@1x.webp",
-      img2x: "img/my-projects/projects-5@2x.webp",
+      img1x: "/src/img/my-projects/projects-5@1x.webp",
+      img2x: "/src/img/my-projects/projects-5@2x.webp",
       link: "https://github.com/Anastasiia-Oli/fur-seal-team-js",
     },
     {
@@ -97,7 +97,7 @@ const projects = [
           <a class="my-projects-link" href="${link}" target="_blank" rel="noopener noreferrer">
             Visit
           <svg class="my-projects-link-icon" width="20" height="20" aria-hidden="true">
-          <use href="/img/sprite.svg#arrow-diagonal"></use>
+          <use href="/src/img/sprite.svg#arrow-diagonal"></use>
           </svg>
           </a>
           </div>
