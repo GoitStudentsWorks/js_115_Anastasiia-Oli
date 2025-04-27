@@ -27,6 +27,9 @@
 .about-bio, .about-education, .about-role {
     display: flex;
     flex-direction: column;
+}
+
+.about-bio, .about-education {
     margin-bottom: 40px;
 }
 
