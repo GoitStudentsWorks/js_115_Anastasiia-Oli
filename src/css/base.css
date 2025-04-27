@@ -49,7 +49,6 @@ body {
 
 main {
   flex-grow: 1;
-  margin: 0;
 }
 main:has(.back-link) {
   text-align: center;

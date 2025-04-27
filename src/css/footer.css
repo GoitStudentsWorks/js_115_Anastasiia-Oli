@@ -1,3 +1,9 @@
+
+.footer {
+    border-top: 2px solid rgba(0, 176, 104, 0.1);
+    } 
+
+
 .last-title {
     margin-top: 40px;
     margin-bottom: 32px;
@@ -25,6 +31,7 @@ line-height: 150%;
 letter-spacing: 0.03em;
 text-align: center;
 margin-bottom: 24px;
+width: 320px;
 }
 
 .last-title{
@@ -40,6 +47,7 @@ text-transform: uppercase;
     color: #00B068;
 }
 
+
 @media (min-width: 768px) {
     .link-list {
         flex-direction: row;
@@ -47,6 +55,7 @@ text-transform: uppercase;
     }
     .copyright-title{
         text-align: right;
+        width: auto;
     }
 }
 
