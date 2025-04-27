@@ -1,37 +1,47 @@
 <section id="header" class="header">
-  <div class="container">
-    <div class="logo">
-      <span class="black">LLOYD</span><span class="green">JEFFERSON.</span>
+  <div class="header-container">
+    <div class="header-logo">
+      <span class="header-logo-black">LLOYD</span
+      ><span class="header-logo-green">JEFFERSON.</span>
     </div>
 
-    <nav class="nav-menu">
-      <div class="mobile-header">
-        <div class="mobile-logo">
-          <span class="black">LLOYD</span><span class="green">JEFFERSON.</span>
-        </div>
-        <button class="close-menu" aria-label="Закрити меню">
-          <svg class="close-icon" width="24" height="24">
-            <use href="../img/sprite.svg#x-mark"></use>
-          </svg>
-        </button>
-      </div>
-      <ul class="nav-list">
-        <li>
-          <a class="lis-item" href="../partials/about-me.html">About me</a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="./about-me.html" class="header-nav-link">About me</a>
         </li>
-        <li>
-          <a class="lis-item" href="../partials/my-projects.html">Projects</a>
+        <li class="header-nav-item">
+          <a href="./my-projects.html" class="header-nav-link">Projects</a>
         </li>
-        <li>
-          <a class="lis-item" href="../partials/work-together.html">Contacts</a>
+        <li class="header-nav-item">
+          <a href="./work-together.html" class="header-nav-link">Contacts</a>
         </li>
       </ul>
     </nav>
 
-    <button class="burger" aria-label="Open Menu">
-      <svg class="burger-icon" width="24" height="24">
-        <use href="../img/sprite.svg#menu"></use>
+    <button class="header-burger" aria-label="Open Menu">
+      <svg class="header-burger-icon" width="24" height="24">
+        <use href="./img/sprite.svg#menu"></use>
       </svg>
     </button>
+  </div>
+
+  <div class="header-mobile-menu">
+    <div class="header-mobile-header">
+      <div class="header-mobile-logo">
+        <span class="header-logo-black">LLOYD</span
+        ><span class="header-logo-green">JEFFERSON.</span>
+      </div>
+      <button class="header-mobile-close" aria-label="Close Menu">
+        <svg class="header-mobile-close-icon" width="24" height="24">
+          <use href="./img/sprite.svg#x-mark"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header-mobile-nav">
+      <a href="./about-me.html" class="header-mobile-nav-link">About me</a>
+      <a href="./my-projects.html" class="header-mobile-nav-link">Projects</a>
+      <a href="./work-together.html" class="header-mobile-nav-link">Contacts</a>
+    </div>
   </div>
 </section>

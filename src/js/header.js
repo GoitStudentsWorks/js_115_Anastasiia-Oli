@@ -1,22 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const burgerBtn = document.querySelector('.burger');
-  const navMenu = document.querySelector('.nav-menu');
-  const closeBtn = document.querySelector('.close-menu');
+  const burgerBtn = document.querySelector('.header-burger');
+  const mobileMenu = document.querySelector('.header-mobile-menu');
+  const closeBtn = document.querySelector('.header-mobile-close');
+  const navLinks = document.querySelectorAll('.header-mobile-nav-link');
 
   burgerBtn.addEventListener('click', function () {
-    navMenu.classList.add('mobile-active');
+    mobileMenu.classList.add('active');
+    document.body.classList.add('noscroll'); // клас, що блокує скрол (визначається глобально)
   });
 
   closeBtn.addEventListener('click', function () {
-    navMenu.classList.remove('mobile-active');
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('noscroll');
   });
 
-  const navLinks = document.querySelectorAll('.lis-item');
   navLinks.forEach(link => {
     link.addEventListener('click', function () {
-      if (window.innerWidth <= 767) {
-        navMenu.classList.remove('mobile-active');
-      }
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('noscroll');
     });
   });
 });
