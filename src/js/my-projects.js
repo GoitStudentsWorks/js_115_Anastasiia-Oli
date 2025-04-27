@@ -18,6 +18,7 @@ import projects81x from '../img/my-projects/projects-8@1x.webp';
 import projects82x from '../img/my-projects/projects-8@2x.webp';
 import projects71x from '../img/my-projects/projects-7@1x.webp';
 import projects72x from '../img/my-projects/projects-7@2x.webp';
+// import arrow from '../img/sprite.svg#arrow-diagonal';
 
 const projects = [
   {
@@ -118,7 +119,7 @@ function renderProjects(items) {
           <a class="my-projects-link" href="${link}" target="_blank" rel="noopener noreferrer">
             Visit
           <svg class="my-projects-link-icon" width="20" height="20" aria-hidden="true">
-          <use href="/img/sprite.svg#arrow-diagonal"></use>
+          <use href="../img/sprite.svg#arrow-diagonal"></use>
           </svg>
           </a>
           </div>
