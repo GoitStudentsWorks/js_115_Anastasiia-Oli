@@ -1,6 +1,8 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+import pathSvg from '../img/sprite.svg';
+
 new Accordion('.accordion-container', {
   duration: 400,
   showMultiple: false,
@@ -18,9 +20,9 @@ function updateAccordionIcons() {
     if (!icon) return; // Если иконка не найдена, пропускаем
 
     if (listItem.classList.contains('is-active')) {
-      icon.setAttribute('href', '../img/sprite.svg#arrow-up');
+      icon.setAttribute('href', `${pathSvg}#arrow-up`);
     } else {
-      icon.setAttribute('href', '../img/sprite.svg#arrow-down');
+      icon.setAttribute('href', `${pathSvg}#arrow-down`);
     }
   });
 }
