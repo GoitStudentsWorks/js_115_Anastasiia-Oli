@@ -1,19 +1,12 @@
 .work-together {
-    width: 100%;
     padding: 0 20px;
-}
-
-.container {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .work-together-title {
-    font-size: 108px;
+    font-family: var(--second-family);
+    font-size: 52px;
     line-height: 123%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -27,8 +20,6 @@
 }
 
 .text-contact-wt {
-    width: 100%;
-    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -69,27 +60,10 @@
     width: 24px;
     height: 24px;
     fill: #292929;
-    margin-right: 8px;
-}
-
-.work-together-contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.work-together-contact {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: #292929;
-    text-decoration: none;
+    margin-right: 16px;
 }
 
 .work-together-form {
-    width: 100%;
-    max-width: 320px;
     display: flex;
     flex-direction: column;
 }
@@ -137,40 +111,14 @@
     border: none;
     cursor: pointer;
     align-self: flex-start;
-}
-
-.work-together-button span {
-    padding: 12px 97.5px;
-}
-
-@media (min-width: 360px) {
-    .container {
-        max-width: 360px;
-    }
-
-    .work-together-title{
-        font-size: 52px;
-    }
-
-    .text-contact-wt {
-        max-width: 360px;
-    }
-
-    .work-together-form {
-        max-width: 360px;
-    }
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 704px;
-        height: auto;
-    }
 
     .work-together-title {
-        font-size: 64px;
-        position: relative;
-        z-index: 1;
+        font-size: 108px;
+        width: 525px;
     }
 
     .work-together-title::after {
@@ -206,22 +154,20 @@
     }
 
     .work-together-button {
-        width: 320px;
+        width: 173px;
         align-self: flex-start;
     }
 }
 
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1080px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 0;
-    }
+    .wrapper {
+            display: flex;
+            justify-content: space-between;
+max-width: 1080px;
+        }
 
     .work-together-title {
-        font-size: 72px;
+        font-size: 108px;
         text-align: left;
         margin-bottom: 80px;
     }
@@ -231,7 +177,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-right: 136px;
     }
 
     .text-wt {
@@ -244,7 +189,7 @@
     }
 
     .work-together-form {
-        max-width: 488px;
+        max-width: 592px;
     }
 
          .work-together-button {
