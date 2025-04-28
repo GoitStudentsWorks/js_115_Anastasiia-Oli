@@ -1,10 +1,8 @@
-.tech-skills {
-    padding: 40px 0;
-}
-
 .custom-container {
-    padding: 0;
+    padding: 40px 0;
     margin: 0;
+    min-width: 100%;
+    overflow: hidden;
 }
 
 .visually-hidden {
@@ -46,6 +44,8 @@
     transform: rotate(2deg);
     position: relative;   
     z-index: 200;
+    width: 120vw;
+    left: -10vw;
 }
 
 .tech-skills-track {
@@ -58,7 +58,6 @@
 
 .tech-skills-marquee-list {
     display: flex;
-    gap: 16px;
     padding: 32px 0;
     margin: 0;
     list-style: none;
@@ -98,17 +97,14 @@
 } 
 
 @media screen and (min-width:768px) {
-    .tech-skills {
+    .custom-container {
         padding: 62px 0;
     }
 }
 
 @media screen and (min-width:1280px) {
-    .tech-skills {
-        padding: 82px 0;
-    }
 
     .custom-container {
-        min-width: 100%;
+        padding: 82px 0;
     }
 }
