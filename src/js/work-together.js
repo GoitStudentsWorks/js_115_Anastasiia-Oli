@@ -28,7 +28,7 @@ form.addEventListener('submit', async function (event) {
   };
 
   try {
-    const response = await fetch('https://yourserver.com/api/work-together', {
+    const response = await fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
