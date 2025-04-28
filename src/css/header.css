@@ -57,7 +57,7 @@
 }
 
 .header-mobile-menu {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -67,10 +67,18 @@
   z-index: 100;
   flex-direction: column;
   padding: 16px;
-  transition: opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 .header-mobile-menu.active {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.noscroll {
+  overflow: hidden;
 }
 
 .header-mobile-header {
@@ -123,7 +131,6 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 1280px;
     margin: 0 auto;
     padding: 24px;
     height: 96px;
