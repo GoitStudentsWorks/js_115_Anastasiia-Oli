@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .benefits {
   padding-top: 80px;
   padding-bottom: 40px;
@@ -6,10 +7,29 @@
 @media (min-width: 768px) {
   .benefits {
     padding-top: 124px;
+=======
+body {
+  font-family: sans-serif;
+}
+
+.benefits {
+  text-align: center;
+}
+
+.benefirs-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefirs-container {
+    padding-top: 62px;
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
     padding-bottom: 62px;
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 1280px) {
   .benefits {
     padding-top: 164px;
@@ -20,12 +40,34 @@
 
 @media screen and (min-width: 1280px) {
   .benefit-with-background-image {
+=======
+@media screen and (min-width: 1280px) {
+  .benefirs-container {
+    position: relative;
+    padding-top: 164px;
+    padding-bottom: 82px;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .benefit-with-background-image {
+  }
+} */
+
+@media screen and (min-width: 1280px) {
+  .benefit-with-background-image {
+    content: '';
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
     position: absolute;
     top: 0;
     right: 32px;
     width: 526px;
     height: 408px;
+<<<<<<< HEAD
     background-image: url('../img/decor-bg/decor-bg-3@2x.webp');
+=======
+    background-image: url('/src/img/decor-bg/decor-bg-3@2x.webp');
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -11;
@@ -33,14 +75,21 @@
 }
 
 .benefits__title {
+<<<<<<< HEAD
   font-family: var(--second-family);
+=======
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
   font-size: 52px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 1.8px;
   color: var(--accet-green);
   text-align: left;
+<<<<<<< HEAD
   margin-bottom: 40px;
+=======
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
 }
 
 @media screen and (min-width: 768px) {
@@ -54,7 +103,10 @@
   .benefits__title {
     font-size: 108px;
     font-weight: 400;
+<<<<<<< HEAD
     width: 690px;
+=======
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
   }
 }
 
@@ -63,6 +115,39 @@
   color: var(--black);
 }
 
+<<<<<<< HEAD
+=======
+.benefits-grid {
+  display: grid;
+}
+
+/* @media screen and (min-width: 768px) {
+  .benefits-grid {
+  }
+} */
+
+@media screen and (min-width: 1280px) {
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    width: 100%;
+  }
+}
+
+.benefit-item {
+  text-align: left;
+  width: 384px;
+  margin-bottom: 32px;
+}
+
+.benefit-item-top {
+  justify-content: end;
+  text-align: left;
+  width: 384px;
+  height: 124px;
+}
+
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
 .benefit-item__icon {
   display: flex;
   justify-content: center;
@@ -89,6 +174,7 @@
 @media screen and (min-width: 768px) {
   .benefits-list {
     display: grid;
+<<<<<<< HEAD
     grid-template-rows: 1fr 1fr;
     grid-gap: 32px;
   }
@@ -109,12 +195,19 @@
 
   .benefits-list .benefit-item:nth-child(3) {
     grid-row: 2;
+=======
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
   }
 }
 
 @media screen and (min-width: 1280px) {
   .benefits-list {
     margin-top: 20px;
+<<<<<<< HEAD
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     bottom: 96px;
@@ -137,6 +230,33 @@
 
   .benefits-list .benefit-item:nth-child(4) {
     grid-column: 3;
+=======
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Створимо сітку з двох колонок */
+    grid-template-rows: auto auto;
+    gap: 32px;
+  }
+}
+
+.benefit-item--expertise {
+}
+
+@media screen and (min-width: 768px) {
+  .benefit-item--expertise {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefit-item--expertise {
+    grid-column: 3 / -1;
+    position: absolute;
+    top: 276px;
+    left: 864px;
+    width: 384px;
+    z-index: 1;
+    margin-bottom: 32px;
+>>>>>>> 7bc8fc2a58128de5aefcb6580de3a0a6ffabe273
   }
 }
 
