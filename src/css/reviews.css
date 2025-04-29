@@ -1,3 +1,5 @@
+
+
 .reviews-section {
 width: 100%;
     position: relative;
@@ -19,6 +21,7 @@ width: 100%;
     display: flex;
     flex-wrap: wrap; 
     gap: 32px; 
+    overflow: hidden;
 }
 
 .review {
@@ -30,9 +33,10 @@ width: 100%;
 
     display: flex;
     flex-direction: column;
+    flex: 1 0 100%;
 
     justify-content: space-between;
-    flex: 1 1 calc(100% - 32px); /* Один відгук на меншому екрані */
+    transition: transform 0.3s ease;
 }
 
 
@@ -117,10 +121,6 @@ width: 100%;
     stroke: #292929;
 }
 
-.swiper-container {
-    margin: 20px 0;
-}
-
 
 .error-message {
     color:firebrick;
@@ -165,15 +165,14 @@ width: 100%;
         margin-bottom: 80px;
     }
     .reviews-list {
-        display: flex;
-        gap: 32px;
+        flex-wrap: nowrap;
     }
     
     .review {
-        width: 592px;
+        width: 590px;
         height: 224px;
         margin-bottom: 24px;
-        flex: 1 1 calc(50% - 32px); /* Два відгуки на великому екрані */
+        flex: 1 0 50%;
     }
     
     
