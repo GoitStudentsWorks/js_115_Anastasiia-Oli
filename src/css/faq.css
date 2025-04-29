@@ -1,0 +1,280 @@
+/*--------------- FAQ SECTION ---------------------*/
+
+.faq {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .faq {
+    padding-top: calc(124px / 2);
+    padding-bottom: calc(124px / 2);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .faq {
+    padding-top: calc(164px / 2);
+    padding-bottom: calc(164px / 2);
+  }
+}
+
+/*--------------- FAQ CONTAINER ---------------------*/
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .faq-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 104px;
+    align-items: end;
+  }
+}
+
+/*--------------- ACCORDION TITLE --------------------*/
+
+.faq-title {
+  font-family: var(--second-family);
+  width: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) {
+  .faq-title {
+    width: 320px;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    margin-bottom: 40px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .faq-title {
+    width: 592px;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .faq-title {
+    width: 520px;
+    background-image: image-set(
+      url('../img/decor-bg/decor-bg-4@1x.webp') 1x,
+      url('../img/decor-bg/decor-bg-4@2x.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 526px 408px;
+    padding-bottom: 648px;
+    margin-bottom: 0;
+  }
+}
+
+.faq-title-span {
+  color: var(--accet-green);
+}
+
+/*--------------- ACCORDION LIST --------------------*/
+
+/* Mobile */
+@media screen and (min-width: 360px) {
+  .accordion-container {
+    max-width: 320px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .accordion-container {
+    max-width: 704px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .accordion-container {
+    max-width: 592px;
+  }
+}
+
+.accordion-container .ac {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--light-grey);
+  padding: 28px 24px;
+  margin: 0;
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) {
+  .accordion-container .ac {
+    width: 320px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .accordion-container .ac {
+    width: 704px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .accordion-container .ac {
+    width: 592px;
+  }
+}
+
+/*--------------- ACCORDION ITEMS --------------------*/
+
+.accordion-container .ac .ac-trigger {
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0;
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) {
+  .accordion-container .ac .ac-trigger {
+    max-width: 272px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .accordion-container .ac .ac-trigger {
+    max-width: 656px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .accordion-container .ac .ac-trigger {
+    max-width: 592px;
+  }
+}
+
+.accordion-container .ac .ac-trigger > span:first-child {
+  font-family: var(--font-family);
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.56; /* 156% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) {
+  .accordion-container .ac .ac-trigger > span:first-child {
+    width: 224px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .accordion-container .ac .ac-trigger > span:first-child {
+    font-size: 20px;
+    line-height: 160%;
+    width: 600px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .accordion-container .ac .ac-trigger > span:first-child {
+    width: 488px;
+  }
+}
+
+.accordion-container .ac .ac-trigger:focus {
+  color: var(--black);
+}
+
+/*------------- ACCORDION ICON-AFTER -----------------*/
+
+.accordion-container .ac .ac-trigger::after {
+  content: '';
+}
+
+.accordion-container .ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+}
+
+.accordion-container .ac.is-active > .ac-header {
+  margin-bottom: 24px;
+}
+
+.accordion-container .ac.is-active {
+  background: var(--light-accent);
+  border-radius: 16px;
+}
+/*--------------- ACCORDION TEXT-CONTAINER --------------------*/
+
+/*--------------- ACCORDION TEXT --------------------*/
+
+.accordion-container .ac .ac-panel .ac-text {
+  font-family: var(--font-family);
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  padding: 0;
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) {
+  .accordion-container .ac .ac-panel .ac-text {
+    width: 272px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .accordion-container .ac .ac-panel .ac-text {
+    width: 656px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .accordion-container .ac .ac-panel .ac-text {
+    width: 544px;
+  }
+}
+
+/*------------- ACCORDION ICON-AFTER-SVG -----------------*/
+
+.ac-icon-span {
+  width: 32px;
+  height: 32px;
+}
+
+.ac-icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+}
