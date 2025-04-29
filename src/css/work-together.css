@@ -101,6 +101,10 @@
     color: #292929;
 }
 
+.work-together-input{
+    margin-bottom: 32px;
+}
+
 .work-together-input,
 .work-together__textarea {
     border-radius: 8px;
@@ -137,6 +141,7 @@
     align-self: flex-start;
     text-transform: uppercase;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 32px;
 }
 
 .work-together-button:hover,
@@ -173,6 +178,7 @@
     .work-together-button {
         width: 173px;
         align-self: flex-start;
+        margin-top: 32px;
     }
 }
 
