@@ -1,7 +1,11 @@
 .hero {
-  background: url('../img/decor-bg/decor-bg-1@1x.webp') no-repeat center top
-    #f0f0f0;
-  background-size: cover;
+  background-image: image-set(
+    url('../img/decor-bg/decor-bg-8@1x.webp') 1x,
+    url('../img/decor-bg/decor-bg-8@2x.webp') 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 704px;
 }
 
 .hero-container {
@@ -51,18 +55,15 @@
   display: inline-block;
   text-decoration: none;
   margin-top: 40px;
+  width: 320px;
 }
 
 .hero-button-content {
   position: absolute;
-  display: inline-flex;
-  align-items: center;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
   transition: all 0.3s ease;
-  left: -80px;
-  padding-left: 24px;
 }
 
 .hero-button-icon {
@@ -74,9 +75,11 @@
 }
 
 .hero-button-text {
-  font-size: 16px;
+  font-size: 18px;
   color: #292929;
   white-space: nowrap;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
   transition: color 0.3s;
 }
 
@@ -84,6 +87,10 @@
   background-color: #c6e3d9;
   border-radius: 16px;
   transition: background-color 0.3s;
+  width: 165px;
+  height: 92px;
+  display: flex;
+  justify-self: flex-end;
 }
 
 .hero-button:hover .hero-button-bg {
@@ -122,7 +129,7 @@
 .profile-img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 32px;
   margin-bottom: 80px;
 }
 
@@ -182,91 +189,74 @@
   flex-direction: column;
   align-items: center;
 }
-.hero-button {
-  margin-left: 40px;
-}
-
-.hero-button-bg {
-  width: 165px;
-  height: 92px;
-  margin-left: auto;
-}
-.hero-button-content {
-  left: -60px;
-  padding-left: 32px;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    background-image: image-set(
+      url('../img/decor-bg/decor-bg-5@1x.webp') 1x,
+      url('../img/decor-bg/decor-bg-5@2x.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 704px 896px;
+  }
   .hero-title {
     font-size: 124px;
-    min-height: 124px;
   }
-  .button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 80px 0;
-  }
+
   .hero-desc {
     font-size: 16px;
   }
-  .hero-right {
-    text-align: center;
-  }
-  .hero-photo {
-    display: none;
-  }
+
   .hero-social {
     flex-direction: row;
     justify-content: center;
   }
 
+  .hero-button {
+    width: 416px;
+    display: flex;
+    justify-self: flex-start;
+  }
+
   .hero-button-bg {
     width: 261px;
     height: 96px;
-    margin-left: 0;
   }
   .hero-button-content {
     left: -140px;
-    padding-left: 24px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-container {
-    margin: 0 auto;
-    padding: 0 16px;
+  .hero {
+    background-image: image-set(
+      url('../img/decor-bg/decor-bg-1@1x.webp') 1x,
+      url('../img/decor-bg/decor-bg-1@2x.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1216px 772px;
   }
+
   .hero-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    gap: 72px;
     align-items: center;
+    margin-top: 88px;
   }
-  .hero-left {
-    flex: 1;
-    margin-top: 40px;
-    align-items: center;
-    text-align: left;
-  }
+
   .hero-title {
     font-size: 124px;
-    text-align: left;
     min-height: 124px;
-    margin-top: 80px;
+    margin-top: 0px;
   }
-  /* .button {
-    font-size: 16px;
-    margin: 80px 0;
-  } */
+
   .hero-right {
-    flex: 1;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    text-align: left;
   }
   .hero-photo {
     display: block;
@@ -275,6 +265,7 @@
     font-size: 20px;
     text-align: left;
     margin-bottom: 40px;
+    margin-top: 0;
   }
   .hero-social {
     flex-direction: row;
@@ -288,39 +279,5 @@
   }
   .hero-button-content {
     left: -140px;
-    padding-left: 24px;
   }
 }
-
-/* @media screen and (max-width: 767px) {
-  .hero-title {
-    font-size: 64px;
-    min-height: 64px;
-  }
-  .hero-desc {
-    font-size: 16px;
-    text-align: left;
-    margin: 40px 0;
-  }
-
-  .hero-photo {
-    display: none;
-  }
-  .hero-social {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-button {
-    margin-left: 40px;
-  }
-
-  .hero-button-bg {
-    width: 165px;
-    height: 92px;
-    margin-left: 80px;
-  }
-  .hero-button-content {
-    left: -60px;
-    padding-left: 32px;
-  }
-} */
