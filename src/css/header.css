@@ -1,7 +1,8 @@
 .header {
   background-color: #f0f0f0;
   width: 100%;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
 }
 
@@ -132,7 +133,8 @@
 @media screen and (min-width: 768px) {
   .header {
     margin: 0 auto;
-    padding: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     height: 96px;
   }
   .header-container {
