@@ -1,15 +1,13 @@
-
-
 const modalOverlay = document.querySelector('.modal-overlay');
 const closeBtn = document.querySelector('.button-close');
 const modalHeader = document.querySelector('.modal-header');
 const modalText = document.querySelector('.modal-text');
 
 
-function openModal({title, message}) {
-    modalHeader.textContent = title;
-    modalText.textContent = message;
-
+export function openModal({title, message}) {
+    if (modalHeader) modalHeader.textContent = title;
+    if (modalText) modalText.textContent = message;
+  
     modalOverlay.classList.add('is-open');
     document.body.classList.add('no-scroll');
 
@@ -44,4 +42,3 @@ modalOverlay.addEventListener('click', (event) => {
 });
 
 
-export { openModal };
