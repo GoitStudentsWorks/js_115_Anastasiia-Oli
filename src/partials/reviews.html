@@ -1,3 +1,29 @@
-<section id="reviews" class="reviews">
-  <div class="container"></div>
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+        <ul id="reviews-wrapper" class="reviews-list">
+            <!-- Відгуки будуть додаватися тут динамічно -->
+        </ul>
+        <div class="navigation-buttons">
+            <button id="prev-button" class="nav-button" aria-label="Previous">
+                <svg
+                  class="prev-button-rev"
+                  width="24"
+                  height="24"
+                >
+                  <use href="../img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+            </button>
+            <button id="next-button" class="nav-button" aria-label="Next">
+                <svg
+                  class="next-button-rev"
+                  width="24"
+                  height="24"
+                >
+                  <use href="../img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="error-message" id="error-message" hidden>Not found</div>
+  </div>
 </section>
