@@ -1,0 +1,114 @@
+.custom-container {
+  padding: 40px 0;
+  margin: 0;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tech-skills-marquee-1 {
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--light-accent);
+  position: relative;
+  z-index: 300;
+}
+
+.tech-skills-marquee-2 {
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accet-green);
+  background: var(--light-grey);
+  transform: rotate(2deg);
+  position: relative;
+  z-index: 200;
+  width: 120vw;
+  left: -10vw;
+}
+
+.tech-skills-track {
+  display: flex;
+  width: fit-content;
+  animation: marqueeLine 10s linear infinite;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.tech-skills-marquee-list {
+  display: flex;
+  padding: 32px 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.tech-skills-marquee-item {
+  position: relative;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.tech-skills-marquee-item::before {
+  content: '•';
+  margin: 0 16px;
+  color: var(--accet-green);
+}
+
+.tech-skills-marquee-2 .tech-skills-track {
+  animation-delay: 1s;
+}
+
+.tech-skills-marquee-2
+  .tech-skills-track
+  .tech-skills-marquee-list
+  .tech-skills-marquee-item::before {
+  content: '•';
+  margin: 0 16px;
+  color: var(--black);
+  transform: rotate(-180deg);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .custom-container {
+    padding: 62px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .custom-container {
+    padding: 82px 0;
+  }
+}

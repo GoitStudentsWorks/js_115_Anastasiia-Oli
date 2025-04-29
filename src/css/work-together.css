@@ -1,0 +1,232 @@
+.work-together {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.work-together-title {
+  font-family: var(--second-family);
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.title-span {
+  color: #00b068;
+}
+
+.text-contact-wt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.text-wt {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 32px;
+}
+
+.wt-contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts-item-wt {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #292929;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacts-item-wt:hover,
+.contacts-item-wt:focus {
+  color: #00b068;
+}
+
+.wt-svg {
+  width: 24px;
+  height: 24px;
+  fill: #292929;
+  margin-right: 16px;
+  transition: fill 0.3s ease;
+}
+
+.contacts-item-wt:hover .wt-svg,
+.contacts-item-wt:focus .wt-svg {
+  fill: #00b068;
+}
+
+.work-together-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-wt {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #292929;
+}
+
+.work-together-input {
+  margin-bottom: 32px;
+}
+
+.work-together-input,
+.work-together__textarea {
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  background: #e4e5e6;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  resize: none;
+}
+
+.work-together-input:focus,
+.work-together-input:hover,
+.work-together__textarea:focus,
+.work-together__textarea:hover {
+  border-color: #00b068;
+  box-shadow: 0px 0px 0px 4px rgba(0, 176, 104, 0.25);
+}
+
+.work-together-button {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 100%;
+  height: 48px;
+  background: #00b068;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 32px;
+}
+
+.work-together-button:hover,
+.work-together-button:focus {
+  background-color: #00975a;
+  box-shadow: 0px 4px 12px rgba(0, 176, 104, 0.3);
+}
+
+@media (min-width: 768px) {
+  .work-together {
+    padding-top: 124px;
+    padding-bottom: 124px;
+    background-image: image-set(
+      url('../img/decor-bg/decor-bg-7@1x.webp') 1x,
+      url('../img/decor-bg/decor-bg-7@2x.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: right 32px top 4px;
+    background-size: 336px 260px;
+  }
+
+  .work-together-title {
+    font-size: 108px;
+    width: 525px;
+  }
+
+  .text-contact-wt {
+    max-width: 704px;
+  }
+
+  .work-together-form {
+    max-width: 704px;
+  }
+
+  .text-wt {
+    width: 488px;
+    height: 66px;
+  }
+
+  .wt-contacts-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .work-together-button {
+    width: 173px;
+    align-self: flex-start;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .work-together {
+    padding-top: 164px;
+    padding-bottom: 164px;
+    background-image: image-set(
+      url('../img/decor-bg/decor-bg-3@1x.webp') 1x,
+      url('../img/decor-bg/decor-bg-3@2x.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: right 32px top 48px;
+    background-size: 526px 408px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-together-title {
+    font-size: 108px;
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+  .text-contact-wt {
+    max-width: 488px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-wt {
+    margin-bottom: 120px;
+  }
+
+  .wt-contacts-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .work-together-form {
+    width: 592px;
+  }
+
+  .work-together-button {
+    width: 173px;
+    align-self: flex-start;
+    margin-top: 32px;
+  }
+}
