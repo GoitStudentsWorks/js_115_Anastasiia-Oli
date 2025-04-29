@@ -1,0 +1,111 @@
+.modal-overlay{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(41, 41, 41, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.modal-overlay.is-open{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-overlay.is-closed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal{
+    background-color: #f0f0f0;
+    border: 1px solid #e4e5e6;
+    position: absolute;
+    border-radius: 16px;
+    padding: 48px 32px;
+    max-width: 320px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open .modal {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-overlay.is-closed .modal {
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+
+@media only screen and (min-width: 768px) {
+    .modal{
+        padding: 64px;
+        max-width: 492px;
+    }    
+}
+
+
+.button-close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .button-close{
+        top: 20px;
+        right: 20px;
+    }   
+}
+
+
+.close-icon{
+   stroke:#292929;
+   stroke-width: 2px;
+   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.close-icon:hover,
+.close-icon:focus{
+    stroke: #bcdfd1;
+    
+}
+
+.modal-header {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00b068;
+    margin-bottom: 16px;
+}
+.modal-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #292929;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
