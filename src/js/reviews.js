@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let reviews = [];     // Масив відгуків
     // Функція для отримання відгуків з сервера
     async function fetchReviews() {
+        errorMessage.hidden = true;
         try {
-            const response = await fetch('/api/reviews');
+            const response = await fetch('https://portfolio-js.b.goit.study/api/reviews');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewsWrapper.innerHTML = ''; // Очищення попередніх відгуків
     const screenWidth = window.innerWidth;
     const reviewsToRender = [];
+  
     if (screenWidth >= 1280) {
         // Десктоп: додаємо 2 відгуки
         reviewsToRender.push(reviews[currentIndex]);
@@ -42,49 +44,47 @@ document.addEventListener("DOMContentLoaded", function () {
         // Мобілка і планшет: тільки один
         reviewsToRender.push(reviews[currentIndex]);
     }
+    
     // Тепер правильно рендеримо всі відгуки
     reviewsToRender.forEach((review) => {
         if (review) {
             const listItem = document.createElement('li');
             listItem.classList.add('review');
             listItem.innerHTML = `
-                <p class="review-text">${review.text}</p>
+                <p class="review-text">${review.review}</p>
                 <div class="review-author-info">
-                    <img src="${review.photo}" alt="${review.name} ${review.surname}" class="review-author-photo"/>
+                    <img src="${review.avatar_url}" alt="${review.author}" class="review-author-photo"/>
                     <div class="review-author-details">
-                        <span class="review-author">${review.name} ${review.surname}</span>
+                        <span class="review-author">${review.author} </span>
                     </div>
                 </div>
             `;
             reviewsWrapper.appendChild(listItem);
         }
     });
-    // Вимкнення кнопок при досягненні країв списку
-    prevButton.disabled = currentIndex === 0;
-    nextButton.disabled = screenWidth >= 1280
-        ? currentIndex >= reviews.length - 2 // Якщо 2 картки, кінець тоді, коли останні дві
-        : currentIndex >= reviews.length - 1; // Якщо 1 картка, кінець на останній
-}
+
+   
+
     // Функція для рендерингу статичних відгуків
     function renderStaticReviews() {
         reviews = [
             {
-            text: "Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations",
-            name: "Natalia",
-            surname: "Shevchenko",
-            photo: "../img/reviews/review-img-1@2x.webp"
-         },
-            {
-                text: "I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. Cooperation with him always brings impressive results.",
-                name: "Dmytro",
-                surname: "Nazarenko",
-                photo: "../img/reviews/review-img-2@2x.webp"
-            },
-        ];
+              "_id": 1,
+              "author": "Natalia",
+              "avatar_url": "https://ftp.goit.study/img/avatars/4.jpg",
+              "review": "Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations."
+            }
+          ]
         renderReviews();
     }
-    function changesReviews() {
-    }
+    
+     // Вимкнення кнопок при досягненні країв списку
+     prevButton.disabled = currentIndex === 0;
+     nextButton.disabled = screenWidth >= 1280 
+         ? currentIndex >= reviews.length - 2 // Якщо 2 картки, кінець тоді, коли останні дві
+         : currentIndex >= reviews.length - 1; // Якщо 1 картка, кінець на останній
+     };
+    
     // Обробка подій при натисканні на кнопки
     nextButton.addEventListener("click", () => {
         const screenWidth = window.innerWidth;

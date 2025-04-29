@@ -1,6 +1,6 @@
 .reviews-section {
 width: 100%;
-    
+    position: relative;
   }
 
 .reviews-title {
@@ -17,7 +17,8 @@ width: 100%;
 
 .reviews-list {
     display: flex;
-    flex: 0 0 auto;
+    flex-wrap: wrap; 
+    gap: 32px; 
 }
 
 .review {
@@ -29,7 +30,9 @@ width: 100%;
 
     display: flex;
     flex-direction: column;
+
     justify-content: space-between;
+    flex: 1 1 calc(100% - 32px); /* Один відгук на меншому екрані */
 }
 
 
@@ -55,6 +58,7 @@ width: 100%;
 .review-author-photo {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .review-author {
@@ -98,7 +102,7 @@ width: 100%;
 .nav-button:hover,
 .nav-button:focus,
 .nav-button:active {
-    border: 1px solid #292929;;
+    border: 1px solid #292929;
 }
 
 .prev-button-rev:hover,
@@ -107,6 +111,9 @@ width: 100%;
 .next-button-rev:hover,
 .next-button-rev:focus,
 .next-button-rev:active {
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    opacity: 1;
     stroke: #292929;
 }
 
@@ -114,15 +121,6 @@ width: 100%;
     margin: 20px 0;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: #292929;
-}
-
-.swiper-button-next:disabled,
-.swiper-button-prev:disabled {
-    color: #e4e5e6; /* Змінюємо колір для неактивних кнопок */
-}
 
 .error-message {
     color:firebrick;
@@ -175,6 +173,7 @@ width: 100%;
         width: 592px;
         height: 224px;
         margin-bottom: 24px;
+        flex: 1 1 calc(50% - 32px); /* Два відгуки на великому екрані */
     }
     
     
