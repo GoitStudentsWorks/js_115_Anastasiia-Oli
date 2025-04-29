@@ -14,20 +14,13 @@
     padding-top: 164px;
     padding-bottom: 82px;
     position: relative;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .benefit-with-background-image {
-    position: absolute;
-    top: 0;
-    right: 32px;
-    width: 526px;
-    height: 408px;
-    background-image: url('../img/decor-bg/decor-bg-3@2x.webp');
-    background-size: cover;
+    background-image: image-set(
+      url('../img/decor-bg/decor-bg-3@1x.webp') 1x,
+      url('../img/decor-bg/decor-bg-3@2x.webp') 2x
+    );
     background-repeat: no-repeat;
-    z-index: -11;
+    background-position: right 32px top 48px;
+    background-size: 526px 408px;
   }
 }
 
