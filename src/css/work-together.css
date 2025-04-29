@@ -1,7 +1,21 @@
 .work-together {
-    padding: 0 20px;
+    position: relative;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.work-together::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -10px;
+    width: 343px;
+    height: 269px;
+    background-image: url(../img/decor-bg/decor-bg-7@2x.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .work-together-title {
@@ -54,6 +68,12 @@
     letter-spacing: 0.03em;
     color: #292929;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts-item-wt:hover,
+.contacts-item-wt:focus {
+    color: #00B068;
 }
 
 .wt-svg {
@@ -61,6 +81,12 @@
     height: 24px;
     fill: #292929;
     margin-right: 16px;
+    transition: fill 0.3s ease;
+}
+
+.contacts-item-wt:hover .wt-svg,
+.contacts-item-wt:focus .wt-svg {
+    fill: #00B068;
 }
 
 .work-together-form {
@@ -75,25 +101,23 @@
     color: #292929;
 }
 
-.work-together-input {
-    border-radius: 8px;
-    padding: 16px;
-    width: 100%;
-    height: 48px;
-    background: #E4E5E6;
-    border: none;
-    margin-bottom: 32px;
-}
-
+.work-together-input,
 .work-together__textarea {
     border-radius: 8px;
     padding: 16px;
     width: 100%;
-    height: 128px;
     background: #E4E5E6;
-    border: none;
-    resize: none;
-    margin-bottom: 32px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.work-together-input:focus,
+.work-together-input:hover,
+.work-together__textarea:focus,
+.work-together__textarea:hover {
+    border-color: #00B068;
+    box-shadow: 0px 0px 0px 4px rgba(0, 176, 104, 0.25);
 }
 
 .work-together-button {
@@ -112,6 +136,13 @@
     cursor: pointer;
     align-self: flex-start;
     text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-together-button:hover,
+.work-together-button:focus {
+    background-color: #00975A;
+    box-shadow: 0px 4px 12px rgba(0, 176, 104, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -119,20 +150,6 @@
     .work-together-title {
         font-size: 108px;
         width: 525px;
-    }
-
-    .work-together-title::after {
-        content: "";
-        position: absolute;
-        top: -60px;
-        right: -10px;
-        width: 343px;
-        height: 269px;
-        background-image: url(../img/decor-bg/decor-bg-7@2x.webp);
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: -1;
-        pointer-events: none;
     }
 
     .text-contact-wt {
@@ -160,11 +177,16 @@
 }
 
 @media (min-width: 1280px) {
+
+    .work-together {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+
     .wrapper {
-            display: flex;
-            justify-content: space-between;
-max-width: 1080px;
-        }
+        display: flex;
+        justify-content: space-between;
+    }
 
     .work-together-title {
         font-size: 108px;
@@ -189,11 +211,12 @@ max-width: 1080px;
     }
 
     .work-together-form {
-        max-width: 592px;
+        width: 592px;
     }
 
-         .work-together-button {
-             width: 173px;
-             align-self: flex-start;
-         }
+    .work-together-button {
+        width: 173px;
+        align-self: flex-start;
+        margin-top: 32px;
+    }
 }

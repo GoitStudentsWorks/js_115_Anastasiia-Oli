@@ -1,8 +1,10 @@
 import 'izitoast/dist/css/iziToast.min.css';
 import iziToast from 'izitoast';
 
+import { postRequest } from './api';
+import { openModal } from './modal';
+
 const form = document.getElementById('workTogetherForm');
-const modalTriggerBtn = document.getElementById('openModalBtn');
 
 form.addEventListener('submit', async function (event) {
   event.preventDefault();
@@ -22,32 +24,23 @@ form.addEventListener('submit', async function (event) {
     return;
   }
 
-  const formData = {
-    email,
-    message,
-  };
-
   try {
-    const response = await fetch('', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
+    await postRequest(email, message);
+
+    openModal({
+      title: 'Thank you for your interest in cooperation!',
+      message:
+        'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.',
     });
 
-    if (!response.ok) {
-      throw new Error('Failed to send');
-    }
-
-    modalTriggerBtn.click();
-
     form.reset();
-    
   } catch (error) {
+    console.error('Form submit error:', error);
+
     iziToast.error({
       title: 'Error',
-      message: 'Something went wrong. Please check your data and try again.',
+      message:
+        'Something went wrong. Please check your data and try again.',
       position: 'topRight',
     });
   }
