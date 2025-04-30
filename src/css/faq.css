@@ -114,6 +114,8 @@
   border-bottom: 1px solid var(--light-grey);
   padding: 28px 24px;
   margin: 0;
+  border-radius: 16px; /*changed*/
+  background: var(--white); /*changed*/
 }
 
 /* Mobile */

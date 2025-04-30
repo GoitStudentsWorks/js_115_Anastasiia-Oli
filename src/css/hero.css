@@ -56,13 +56,9 @@
   text-decoration: none;
   margin-top: 40px;
   width: 100%;
-  outline: 1px solid red;
 }
 
 .hero-button-content {
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
   z-index: 2;
   transition: all 0.3s ease;
   display: flex;
@@ -121,17 +117,11 @@
   text-transform: uppercase;
   color: #292929;
   margin: 80px 0;
-  /* text-align: center; */
 }
 
 .text-green {
   color: #00b068;
   font-weight: bold;
-}
-
-.hero-right {
-  /* display: block; */
-  /* text-align: center; */
 }
 
 .hero-photo {
@@ -190,7 +180,6 @@
 }
 .hero-desc {
   font-size: 16px;
-  /* text-align: left; */
   margin: 40px 0;
 }
 
@@ -227,8 +216,6 @@
 
   .hero-button {
     width: 416px;
-    /* display: flex;
-    justify-self: flex-start; */
   }
 
   .hero-button-bg {
@@ -286,7 +273,4 @@
     width: 261px;
     height: 96px;
   }
-  /* .hero-button-content {
-    left: -140px;
-  } */
 }
