@@ -1,11 +1,14 @@
 .hero {
-  background-image: image-set(
-    url('../img/decor-bg/decor-bg-8@1x.webp') 1x,
-    url('../img/decor-bg/decor-bg-8@2x.webp') 2x
-  );
+  background-image: url('../img/decor-bg/decor-bg-8@1x.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px 704px;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/decor-bg/decor-bg-8@2x.webp');
+  }
 }
 
 .hero-container {
@@ -193,14 +196,18 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-5@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-5@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-5@1x.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 704px 896px;
   }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/decor-bg/decor-bg-5@2x.webp');
+    }
+  }
+
   .hero-title {
     font-size: 124px;
   }
@@ -226,13 +233,16 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-1@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-1@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-1@1x.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1216px 772px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/decor-bg/decor-bg-1@2x.webp');
+    }
   }
 
   .hero-main {

@@ -14,13 +14,16 @@
     padding-top: 164px;
     padding-bottom: 82px;
     position: relative;
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-3@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-3@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-3@1x.webp');
     background-repeat: no-repeat;
     background-position: right 32px top 48px;
     background-size: 526px 408px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .benefits {
+      background-image: url('../img/decor-bg/decor-bg-3@2x.webp');
+    }
   }
 }
 

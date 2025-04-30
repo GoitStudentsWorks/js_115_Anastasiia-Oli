@@ -69,15 +69,18 @@
 @media screen and (min-width: 1280px) {
   .faq-title {
     width: 520px;
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-4@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-4@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-4@1x.webp');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 526px 408px;
     padding-bottom: 648px;
     margin-bottom: 0;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .faq-title {
+      background-image: url('../img/decor-bg/decor-bg-4@2x.webp');
+    }
   }
 }
 

@@ -39,8 +39,7 @@ form.addEventListener('submit', async function (event) {
 
     iziToast.error({
       title: 'Error',
-      message:
-        'Something went wrong. Please check your data and try again.',
+      message: 'Something went wrong. Please check your data and try again.',
       position: 'topRight',
     });
   }

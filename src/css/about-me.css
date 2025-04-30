@@ -109,15 +109,18 @@
 
 @media screen and (min-width: 768px) {
   .about-me {
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-6@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-6@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-6@1x.webp');
     background-repeat: no-repeat;
     background-position: left 396px top 918px;
     background-size: 336px 252px;
     padding-top: 124px;
     padding-bottom: 62px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .about-me {
+      background-image: url('../img/decor-bg/decor-bg-6@2x.webp');
+    }
   }
 
   .grid-container {

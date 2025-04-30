@@ -141,13 +141,16 @@
   .work-together {
     padding-top: 124px;
     padding-bottom: 124px;
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-7@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-7@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-7@1x.webp');
     background-repeat: no-repeat;
     background-position: right 32px top 4px;
     background-size: 336px 260px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .work-together {
+      background-image: url('../img/decor-bg/decor-bg-7@2x.webp');
+    }
   }
 
   .work-together-title {
@@ -184,13 +187,16 @@
   .work-together {
     padding-top: 164px;
     padding-bottom: 164px;
-    background-image: image-set(
-      url('../img/decor-bg/decor-bg-3@1x.webp') 1x,
-      url('../img/decor-bg/decor-bg-3@2x.webp') 2x
-    );
+    background-image: url('../img/decor-bg/decor-bg-3@1x.webp');
     background-repeat: no-repeat;
     background-position: right 32px top 48px;
     background-size: 526px 408px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .work-together {
+      background-image: url('../img/decor-bg/decor-bg-3@2x.webp');
+    }
   }
 
   .wrapper {
