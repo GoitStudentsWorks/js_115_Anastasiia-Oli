@@ -47,6 +47,11 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: var(--white);
+  /* scroll-behavior: smooth; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
