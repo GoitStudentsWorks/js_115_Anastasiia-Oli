@@ -91,4 +91,4 @@ function updateButtons() {
 }
 
 renderReviews();
-console.log('Slides count:', reviewsWrapper);
+// console.log('Slides count:', reviewsWrapper);
