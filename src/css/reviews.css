@@ -81,6 +81,12 @@
   justify-content: center;
 }
 
+.nav-button:hover,
+.nav-button:focus {
+  border: 1px solid var(--black);
+  background: var(--light-grey);
+}
+
 .prev-button-re,
 .next-button-re {
   fill: none;
@@ -100,14 +106,14 @@
 }
 
 .error-message {
-  color: firebrick;
-  font-family: var(--second-family);
+  color: var(--error);
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 25px;
   line-height: 1.5;
   letter-spacing: 0.03em;
 
-  border: 2px solid firebrick;
+  border: 2px solid var(--error);
   border-radius: 8px;
   width: 200px;
   height: 48px;
