@@ -25,6 +25,11 @@
   padding: 32px;
   width: 320px;
   transition: transform 0.3s ease;
+
+  min-height: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .review-text {
@@ -101,6 +106,8 @@
 
 .nav-button:disabled {
   border: 1px solid #e4e5e6;
+  background-color: transparent;
+  cursor: default;
 }
 .nav-button:disabled .next-button-re,
 .nav-button:disabled .prev-button-re {
@@ -138,6 +145,11 @@
     margin-bottom: 60px;
   }
 
+  .review-slide {
+    width: 100%;
+    min-height: 224px;
+  }
+
   .review-text {
     margin-bottom: 24px;
   }
@@ -155,8 +167,5 @@
   .review-slide {
     width: 592px;
     min-height: 248px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
