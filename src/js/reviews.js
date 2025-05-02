@@ -24,13 +24,14 @@ async function renderReviews() {
     const markup = reviews
       .map(
         ({ author, avatar_url, review }) => `
-        <li class="swiper-slide review-slide">
+        <li class="swiper-slide">
+        <div class="review-slide">
         <p class="review-text">${review}</p>
         <div class="name-wrapper">
         <img src="${avatar_url}" alt="${author}" class="review-avatar" />
           <h3 class="review-author">${author}</h3>
           </div>
-
+        </div>
         </li>`
       )
       .join('');

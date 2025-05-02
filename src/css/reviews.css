@@ -152,7 +152,11 @@
     margin-bottom: 80px;
   }
 
-  .swiper-slide {
+  .review-slide {
     width: 592px;
+    min-height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
