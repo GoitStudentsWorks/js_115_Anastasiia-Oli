@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/fur-seal-team-js/",
+    "build": "vite build --base=/js_115_Anastasiia-Oli/",
     "preview": "vite preview"
   },
   "devDependencies": {
